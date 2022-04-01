@@ -5,7 +5,7 @@ USER root
 COPY . /tmp/src
 
 RUN mv /tmp/src/.s2i/bin /tmp/scripts
-
+ECHO "GRUPO 16"
 RUN rm -rf /tmp/src/.git* && \
     chown -R 1001 /tmp/src && \
     chgrp -R 0 /tmp/src && \
